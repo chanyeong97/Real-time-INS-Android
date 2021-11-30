@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/velocity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="592dp"
+        android:text="velocity"
+        app:layout_constraintStart_toStartOf="@+id/x"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
+        android:text="location"
+        app:layout_constraintStart_toEndOf="@+id/velocity"
+        app:layout_constraintTop_toTopOf="@+id/velocity" />
+
+    <TextView
+        android:id="@+id/y"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:text="0"
+        app:layout_constraintStart_toStartOf="@+id/x"
+        app:layout_constraintTop_toTopOf="@+id/x" />
+
+    <TextView
+        android:id="@+id/location_y"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="156dp"
+        android:layout_marginTop="36dp"
+        android:text="0"
+        app:layout_constraintStart_toStartOf="@+id/x"
+        app:layout_constraintTop_toTopOf="@+id/x" />
+
+    <TextView
+        android:id="@+id/x"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="30dp"
+        android:text="0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/velocity" />
+
+    <TextView
+        android:id="@+id/location_x"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        app:layout_constraintStart_toStartOf="@+id/location_y"
+        app:layout_constraintTop_toTopOf="@+id/x" />
+
+    <TextView
+        android:id="@+id/time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"
+        android:text="time"
+        app:layout_constraintBottom_toTopOf="@+id/velocity"
+        app:layout_constraintStart_toStartOf="@+id/velocity" />
+
+    <TextView
+        android:id="@+id/stepTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="stepTime"
+        app:layout_constraintBottom_toTopOf="@+id/time"
+        app:layout_constraintStart_toStartOf="@+id/time" />
+
+    <ImageView
+        android:id="@+id/cood"
+        android:layout_width="400dp"
+        android:layout_height="400dp"
+        android:layout_marginTop="100dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
